@@ -1,0 +1,45 @@
+@media (max-width: 1399px) {
+}
+
+@media (max-width: 1199px) {
+}
+
+@media (max-width: 991px) {
+  header nav {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 575px) {
+  .checkbox {
+    display: block;
+  }
+  .nav-menu.active {
+    display: block;
+    flex-direction: column;
+    position: absolute;
+    background: var(--green-dark);
+    top: 11%;
+    right: 0;
+    left: 0;
+    z-index: 9;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .btn-green {
+    display: none;
+  }
+  header nav ul {
+    display: flex;
+    align-items: flex-start;
+    gap: 42px;
+  }
+  .logos {
+    display: block;
+  }
+}

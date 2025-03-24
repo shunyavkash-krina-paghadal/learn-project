@@ -1,0 +1,8 @@
+header ul a:hover {
+  color: var(--green);
+  transition: 0.4s all ease-in-out;
+}
+.btn-green:hover {
+  background-color: var(--orange);
+  transition: 0.4s all ease-in-out;
+}
