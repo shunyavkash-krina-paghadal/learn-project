@@ -8,9 +8,31 @@
   header nav {
     display: none;
   }
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
 }
 
 @media (max-width: 767px) {
+  .heros-inner {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 160px 0 80px 0;
+    gap: 20px;
+  }
+  .heros-items {
+    margin-bottom: 20px;
+  }
+  .hero-section .btn-green {
+    display: block;
+  }
+   .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -22,15 +44,22 @@
     flex-direction: column;
     position: absolute;
     background: var(--green-dark);
-    top: 11%;
+    top: 81%;
     right: 0;
     left: 0;
     z-index: 9;
+    /* height: 100vh; */
   }
   nav ul {
     display: flex;
     flex-direction: column;
   }
+  .heros-items h1 {
+    font-size: 54px;
+    color: var(--white);
+    font-weight: 500;
+    line-height: 92px;
+}
   .btn-green {
     display: none;
   }
@@ -41,5 +70,10 @@
   }
   .logos {
     display: block;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
   }
 }

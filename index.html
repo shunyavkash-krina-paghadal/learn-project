@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>index</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../learn-project/assets/fonts/fonts 9/remixicon.css">
     <link rel="stylesheet" href="../learn-project/assets/css/hover.css" type="text/css">
     <link rel="stylesheet" href="../learn-project/assets/fonts/ubun/stylesheet.css" type="text/css">
     <link rel="stylesheet" href="../learn-project/assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="../learn-project/assets/css/header.css" type="text/css">
     <link rel="stylesheet" href="../learn-project/assets/css/media.css" type="text/css">
 </head>
 
@@ -28,7 +30,23 @@
                 <nav class="nav-menu">
                     <ul>
 
-                        <li><a href="#">Home</a></li>
+                        <li class="relative">
+                            <a href="#">
+                                Home
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chevron-compact-down">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M4 11l8 3l8 -3" />
+                                </svg>
+                            </a>
+                            <!-- <div class="dropdown">
+                                <ul>
+                                    <li><a href="#">Home 01</a></li>
+                                    <li><a href="#">Home 02</a></li>
+                                    <li><a href="#">Home 03</a></li>
+                                    <li><a href="#">Home 04</a></li>
+                                </ul>
+                            </div> -->
+                        </li>
                         <li><a href="#">Tours</a></li>
                         <li><a href="#">Destination</a></li>
                         <li><a href="#">Blog</a></li>
@@ -47,12 +65,548 @@
                     <h4>Book Now</h4>
                     <i class="ri-send-plane-fill"></i>
                 </a>
-                
+
             </div>
         </div>
     </header>
+
+
+    <!-- HERO-SECTION----->
+    <section class="hero-section">
+        <div class="container">
+            <div class="heros-inner">
+                <div class="heros-items">
+                    <a href="#" class="btn-orange">Tour & Travels</a>
+                    <h1>Travel & Adventure Camping</h1>
+                    <p>Nunc et dui nullam aliquam eget velit. Consectetur nulla convallis
+                        viverra quisque eleifend</p>
+                    <a href="#" class="btn-green">
+                        <h4>Book Now</h4>
+                        <i class="ri-send-plane-fill"></i>
+                    </a>
+                </div>
+                <div class="heros-items">
+                    <img src="../learn-project/assets/ img/background/tour-hero.jpg" alt="tour-hero" title="tour-hero" draggable="false" width="100%" height="100%" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ABOUT-SECTION----->
+
+    <section class="about">
+        <div class="container">
+            <div class="about-title">
+                <a href="#" class="btn-primary">About Company</a>
+                <h2>We Are Most Funning Company About Travel & Tours</h2>
+                <p>Sit amet consectetur. Velit integer eu tincidunt scelerisque. Sodales volutpat neque fermentum malesuada
+                    scelerisque massa lacus. Ultrices eget leo cras odio blandit rhoncus eu. At feugiat condimentum
+                    massa integer iaculis sit sit. Sagittis vitae quis sed vitae congue
+                </p>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="about-items">
+                            <div class="about-para">
+                                <div class="about-img">
+                                    <img src="../learn-project/assets/ img/background/about-1.jpg" width="100%" />
+                                </div>
+                                <div class="about-content">
+                                    <span></span>
+                                    <div class="paras-col">
+
+                                        <h4>Tent Camping Services</h4>
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                <path d="M5 12l14 0" />
+                                                <path d="M15 16l4 -4" />
+                                                <path d="M15 8l4 4" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="para">
+                                        <p>Set unde omnis estenatus voluptatem aperiae.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="about-items">
+                            <div class="about-para">
+                                <div class="about-img">
+                                    <img src="../learn-project/assets/ img/background/about-2.jpg" width="100%" />
+                                </div>
+                                <div class="about-content">
+                                    <span></span>
+                                    <div class="paras-col">
+
+                                        <h4>Couple Camping or Cabin </h4>
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                <path d="M5 12l14 0" />
+                                                <path d="M15 16l4 -4" />
+                                                <path d="M15 8l4 4" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="para">
+                                        <p>Set unde omnis estenatus voluptatem aperiae.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="about-items">
+                            <div class="about-para">
+                                <div class="about-img">
+                                    <img src="../learn-project/assets/ img/background/about-3.jpg" width="100%" />
+                                </div>
+                                <div class="about-content">
+                                    <span></span>
+                                    <div class="paras-col">
+
+                                        <h4>Trailes and Rv Spots</h4>
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                <path d="M5 12l14 0" />
+                                                <path d="M15 16l4 -4" />
+                                                <path d="M15 8l4 4" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="para">
+                                        <p>Set unde omnis estenatus voluptatem aperiae.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="about-items">
+                            <div class="about-para">
+                                <div class="about-img">
+                                    <img src="../learn-project/assets/ img/background/feat-3.jpg" width="100%" />
+                                </div>
+                                <div class="about-content">
+                                    <span></span>
+                                    <div class="paras-col">
+
+                                        <h4>Adventure and Climbing</h4>
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                <path d="M5 12l14 0" />
+                                                <path d="M15 16l4 -4" />
+                                                <path d="M15 8l4 4" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="para">
+                                        <p>Set unde omnis estenatus voluptatem aperiae.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="about-items">
+                            <div class="about-para">
+                                <div class="about-img">
+                                    <img src="../learn-project/assets/ img/background/about-1.jpg" width="100%" />
+                                </div>
+                                <div class="about-content">
+                                    <span></span>
+                                    <div class="paras-col">
+
+                                        <h4>Tent Camping Services</h4>
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                <path d="M5 12l14 0" />
+                                                <path d="M15 16l4 -4" />
+                                                <path d="M15 8l4 4" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="para">
+                                        <p>Set unde omnis estenatus voluptatem aperiae.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="about-items">
+                            <div class="about-para">
+                                <div class="about-img">
+                                    <img src="../learn-project/assets/ img/background/about-2.jpg" width="100%" />
+                                </div>
+                                <div class="about-content">
+                                    <span></span>
+                                    <div class="paras-col">
+
+                                        <h4>Couple Camping or Cabin </h4>
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                <path d="M5 12l14 0" />
+                                                <path d="M15 16l4 -4" />
+                                                <path d="M15 8l4 4" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="para">
+                                        <p>Set unde omnis estenatus voluptatem aperiae.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="about-items">
+                            <div class="about-para">
+                                <div class="about-img">
+                                    <img src="../learn-project/assets/ img/background/about-3.jpg" width="100%" />
+                                </div>
+                                <div class="about-content">
+                                    <span></span>
+                                    <div class="paras-col">
+
+                                        <h4>Trailes and Rv Spots</h4>
+                                        <a href="#">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-narrow-right">
+                                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                                <path d="M5 12l14 0" />
+                                                <path d="M15 16l4 -4" />
+                                                <path d="M15 8l4 4" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="para">
+                                        <p>Set unde omnis estenatus voluptatem aperiae.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COUNTER-JS------>
+
+    <section class="counterss">
+        <div class="container">
+            <div class="counter-inner">
+                <div class="wrapper">
+                    <div class="counter col_fourth">
+                        <a href="#">
+                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+
+                                <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                                    <path d="M184 5019 c-18 -20 -19 -51 -22 -878 -2 -637 1 -863 9 -884 14 -34
+                                51 -50 91 -42 59 13 58 8 58 492 l0 443 489 0 c479 0 489 0 515 21 44 35 36
+                                73 -55 265 l-81 170 86 172 c47 95 86 181 86 192 0 12 -11 32 -25 45 l-24 25
+                                -554 0 c-550 0 -554 0 -573 -21z m966 -136 c0 -3 -27 -57 -60 -119 -36 -68
+                                -60 -125 -60 -143 0 -17 27 -89 60 -159 33 -71 60 -131 60 -135 0 -4 -187 -7
+                                -415 -7 l-415 0 0 285 0 285 415 0 c228 0 415 -3 415 -7z" />
+                                    <path d="M3650 4919 c-130 -21 -258 -115 -323 -237 l-33 -62 -515 -4 c-373 -2
+                                -567 -8 -709 -20 -247 -21 -415 -43 -440 -56 -41 -22 -38 -98 5 -126 23 -15
+                                36 -15 173 0 424 47 1005 67 1357 47 l110 -6 8 -55 c16 -114 96 -235 197 -300
+                                225 -144 538 -57 647 181 10 21 21 39 24 39 15 0 231 -117 306 -166 241 -160
+                                377 -387 359 -601 -21 -253 -233 -463 -581 -576 -85 -28 -280 -77 -305 -77 -9
+                                0 -24 23 -38 58 -43 112 -141 210 -252 254 -35 13 -87 23 -143 26 -106 5 -192
+                                -18 -277 -77 -108 -73 -190 -220 -190 -337 0 -37 -3 -44 -22 -48 -13 -2 -185
+                                -23 -383 -46 -445 -52 -852 -104 -1010 -130 l-120 -20 -15 23 c-97 144 -282
+                                226 -447 199 -233 -39 -403 -257 -378 -488 l6 -61 -68 -53 c-288 -224 -451
+                                -537 -453 -868 0 -167 42 -311 132 -450 167 -255 450 -393 875 -427 l81 -7 6
+                                -33 c10 -53 62 -147 107 -194 183 -190 481 -187 659 5 48 52 96 148 109 217 5
+                                26 11 50 13 52 2 3 191 9 418 15 501 12 817 35 1204 86 138 18 136 18 136 -5
+                                0 -10 16 -50 35 -89 44 -87 123 -163 215 -205 87 -41 223 -49 316 -19 125 39
+                                217 122 277 249 30 64 32 74 32 183 0 111 -1 117 -36 190 l-36 75 44 70 c108
+                                172 177 356 189 503 22 284 -186 556 -473 617 -374 79 -733 -201 -733 -571 0
+                                -163 70 -361 196 -557 l44 -68 -21 -30 c-22 -31 -59 -128 -59 -154 0 -19 -4
+                                -20 -275 -49 -420 -46 -650 -61 -1145 -71 -157 -3 -297 -8 -312 -11 -25 -5
+                                -30 -1 -58 60 -65 137 -192 233 -343 258 -123 20 -268 -22 -366 -108 -57 -49
+                                -116 -141 -132 -204 l-13 -50 -45 0 c-63 0 -219 25 -316 50 -104 27 -265 107
+                                -337 167 -220 183 -289 478 -184 786 58 168 166 320 315 443 l64 53 47 -52
+                                c145 -157 378 -192 562 -84 54 32 139 121 167 175 31 60 51 147 51 218 l0 63
+                                53 10 c122 25 633 90 1192 151 105 11 206 23 226 26 35 6 37 4 66 -47 82 -145
+                                272 -244 431 -224 117 15 210 62 290 149 47 51 97 147 107 205 l6 37 98 16
+                                c194 34 465 139 612 239 219 148 349 370 349 595 0 205 -99 411 -276 573 -95
+                                87 -206 158 -383 247 -149 75 -151 76 -151 109 0 18 -9 61 -19 94 -66 214
+                                -279 345 -501 310z m205 -182 c62 -32 108 -79 134 -137 26 -59 37 -126 23
+                                -142 -6 -7 -10 -29 -9 -50 2 -80 -95 -183 -200 -214 -226 -66 -433 157 -356
+                                382 21 63 110 154 173 177 66 24 171 17 235 -16z m-248 -1683 c127 -62 190
+                                -208 149 -349 -23 -75 -106 -163 -180 -188 -114 -39 -221 -14 -306 72 -46 46
+                                -59 67 -73 118 -21 77 -21 105 -2 170 52 175 245 258 412 177z m-2404 -420
+                                c25 -8 66 -33 91 -55 203 -179 76 -512 -195 -513 -249 -1 -380 296 -215 491
+                                15 17 54 46 88 62 71 36 154 41 231 15z m3299 -651 c118 -56 210 -160 243
+                                -277 26 -89 16 -215 -25 -331 -39 -112 -128 -271 -189 -340 -25 -28 -83 -98
+                                -129 -153 -46 -56 -87 -102 -92 -102 -16 0 -210 238 -274 338 -127 197 -189
+                                394 -167 532 27 164 136 293 298 350 47 17 77 20 163 17 94 -2 112 -6 172 -34z
+                                m-424 -1185 c87 -106 188 -211 209 -219 40 -15 81 13 175 119 48 53 94 106
+                                101 116 14 19 15 19 28 -5 7 -14 13 -56 13 -99 1 -62 -4 -85 -27 -132 -53
+                                -107 -144 -163 -267 -162 -61 0 -85 5 -126 27 -100 51 -164 153 -164 261 0 50
+                                16 126 26 126 3 0 17 -15 32 -32z m-2288 -3 c107 -55 170 -151 170 -260 0 -83
+                                -23 -145 -76 -204 -140 -156 -392 -117 -484 75 -34 72 -33 173 4 248 31 64 99
+                                128 159 150 56 21 179 16 227 -9z" />
+                                    <path d="M4219 1925 c-201 -65 -294 -289 -200 -480 112 -228 427 -251 566 -42
+                                44 67 69 162 60 230 -16 119 -98 233 -201 278 -60 27 -166 33 -225 14z m169
+                                -159 c93 -49 128 -157 81 -254 -52 -106 -183 -131 -274 -50 -96 84 -64 266 55
+                                311 29 11 111 7 138 -7z" />
+                                </g>
+                            </svg>
+
+                        </a>
+
+                        <h2 class="timer count-title count-number" data-to="3568" data-speed="1500">
+
+                        </h2>
+                        <p class="count-text ">Happy Traveler</p>
+                    </div>
+
+                    <div class="counter col_fourth">
+
+                        <a href="#">
+                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+
+                                <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                                    <path d="M184 5019 c-18 -20 -19 -51 -22 -878 -2 -637 1 -863 9 -884 14 -34
+                                                    51 -50 91 -42 59 13 58 8 58 492 l0 443 489 0 c479 0 489 0 515 21 44 35 36
+                                                    73 -55 265 l-81 170 86 172 c47 95 86 181 86 192 0 12 -11 32 -25 45 l-24 25
+                                                    -554 0 c-550 0 -554 0 -573 -21z m966 -136 c0 -3 -27 -57 -60 -119 -36 -68
+                                                    -60 -125 -60 -143 0 -17 27 -89 60 -159 33 -71 60 -131 60 -135 0 -4 -187 -7
+                                                    -415 -7 l-415 0 0 285 0 285 415 0 c228 0 415 -3 415 -7z" />
+                                    <path d="M3650 4919 c-130 -21 -258 -115 -323 -237 l-33 -62 -515 -4 c-373 -2
+                                                    -567 -8 -709 -20 -247 -21 -415 -43 -440 -56 -41 -22 -38 -98 5 -126 23 -15
+                                                    36 -15 173 0 424 47 1005 67 1357 47 l110 -6 8 -55 c16 -114 96 -235 197 -300
+                                                    225 -144 538 -57 647 181 10 21 21 39 24 39 15 0 231 -117 306 -166 241 -160
+                                                    377 -387 359 -601 -21 -253 -233 -463 -581 -576 -85 -28 -280 -77 -305 -77 -9
+                                                    0 -24 23 -38 58 -43 112 -141 210 -252 254 -35 13 -87 23 -143 26 -106 5 -192
+                                                    -18 -277 -77 -108 -73 -190 -220 -190 -337 0 -37 -3 -44 -22 -48 -13 -2 -185
+                                                    -23 -383 -46 -445 -52 -852 -104 -1010 -130 l-120 -20 -15 23 c-97 144 -282
+                                                    226 -447 199 -233 -39 -403 -257 -378 -488 l6 -61 -68 -53 c-288 -224 -451
+                                                    -537 -453 -868 0 -167 42 -311 132 -450 167 -255 450 -393 875 -427 l81 -7 6
+                                                    -33 c10 -53 62 -147 107 -194 183 -190 481 -187 659 5 48 52 96 148 109 217 5
+                                                    26 11 50 13 52 2 3 191 9 418 15 501 12 817 35 1204 86 138 18 136 18 136 -5
+                                                    0 -10 16 -50 35 -89 44 -87 123 -163 215 -205 87 -41 223 -49 316 -19 125 39
+                                                    217 122 277 249 30 64 32 74 32 183 0 111 -1 117 -36 190 l-36 75 44 70 c108
+                                                    172 177 356 189 503 22 284 -186 556 -473 617 -374 79 -733 -201 -733 -571 0
+                                                    -163 70 -361 196 -557 l44 -68 -21 -30 c-22 -31 -59 -128 -59 -154 0 -19 -4
+                                                    -20 -275 -49 -420 -46 -650 -61 -1145 -71 -157 -3 -297 -8 -312 -11 -25 -5
+                                                    -30 -1 -58 60 -65 137 -192 233 -343 258 -123 20 -268 -22 -366 -108 -57 -49
+                                                    -116 -141 -132 -204 l-13 -50 -45 0 c-63 0 -219 25 -316 50 -104 27 -265 107
+                                                    -337 167 -220 183 -289 478 -184 786 58 168 166 320 315 443 l64 53 47 -52
+                                                    c145 -157 378 -192 562 -84 54 32 139 121 167 175 31 60 51 147 51 218 l0 63
+                                                    53 10 c122 25 633 90 1192 151 105 11 206 23 226 26 35 6 37 4 66 -47 82 -145
+                                                    272 -244 431 -224 117 15 210 62 290 149 47 51 97 147 107 205 l6 37 98 16
+                                                    c194 34 465 139 612 239 219 148 349 370 349 595 0 205 -99 411 -276 573 -95
+                                                    87 -206 158 -383 247 -149 75 -151 76 -151 109 0 18 -9 61 -19 94 -66 214
+                                                    -279 345 -501 310z m205 -182 c62 -32 108 -79 134 -137 26 -59 37 -126 23
+                                                    -142 -6 -7 -10 -29 -9 -50 2 -80 -95 -183 -200 -214 -226 -66 -433 157 -356
+                                                    382 21 63 110 154 173 177 66 24 171 17 235 -16z m-248 -1683 c127 -62 190
+                                                    -208 149 -349 -23 -75 -106 -163 -180 -188 -114 -39 -221 -14 -306 72 -46 46
+                                                    -59 67 -73 118 -21 77 -21 105 -2 170 52 175 245 258 412 177z m-2404 -420
+                                                    c25 -8 66 -33 91 -55 203 -179 76 -512 -195 -513 -249 -1 -380 296 -215 491
+                                                    15 17 54 46 88 62 71 36 154 41 231 15z m3299 -651 c118 -56 210 -160 243
+                                                    -277 26 -89 16 -215 -25 -331 -39 -112 -128 -271 -189 -340 -25 -28 -83 -98
+                                                    -129 -153 -46 -56 -87 -102 -92 -102 -16 0 -210 238 -274 338 -127 197 -189
+                                                    394 -167 532 27 164 136 293 298 350 47 17 77 20 163 17 94 -2 112 -6 172 -34z
+                                                    m-424 -1185 c87 -106 188 -211 209 -219 40 -15 81 13 175 119 48 53 94 106
+                                                    101 116 14 19 15 19 28 -5 7 -14 13 -56 13 -99 1 -62 -4 -85 -27 -132 -53
+                                                    -107 -144 -163 -267 -162 -61 0 -85 5 -126 27 -100 51 -164 153 -164 261 0 50
+                                                    16 126 26 126 3 0 17 -15 32 -32z m-2288 -3 c107 -55 170 -151 170 -260 0 -83
+                                                    -23 -145 -76 -204 -140 -156 -392 -117 -484 75 -34 72 -33 173 4 248 31 64 99
+                                                    128 159 150 56 21 179 16 227 -9z" />
+                                    <path d="M4219 1925 c-201 -65 -294 -289 -200 -480 112 -228 427 -251 566 -42
+                                                    44 67 69 162 60 230 -16 119 -98 233 -201 278 -60 27 -166 33 -225 14z m169
+                                                    -159 c93 -49 128 -157 81 -254 -52 -106 -183 -131 -274 -50 -96 84 -64 266 55
+                                                    311 29 11 111 7 138 -7z" />
+                                </g>
+                            </svg>
+
+                        </a>
+                        <h2 class="timer count-title count-number" data-to="8453" data-speed="1500"></h2>
+                        <p class="count-text ">Tent Sites</p>
+                    </div>
+
+                    <div class="counter col_fourth">
+                        <a href="#">
+                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+
+                                <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                                    <path d="M184 5019 c-18 -20 -19 -51 -22 -878 -2 -637 1 -863 9 -884 14 -34
+                                                    51 -50 91 -42 59 13 58 8 58 492 l0 443 489 0 c479 0 489 0 515 21 44 35 36
+                                                    73 -55 265 l-81 170 86 172 c47 95 86 181 86 192 0 12 -11 32 -25 45 l-24 25
+                                                    -554 0 c-550 0 -554 0 -573 -21z m966 -136 c0 -3 -27 -57 -60 -119 -36 -68
+                                                    -60 -125 -60 -143 0 -17 27 -89 60 -159 33 -71 60 -131 60 -135 0 -4 -187 -7
+                                                    -415 -7 l-415 0 0 285 0 285 415 0 c228 0 415 -3 415 -7z" />
+                                    <path d="M3650 4919 c-130 -21 -258 -115 -323 -237 l-33 -62 -515 -4 c-373 -2
+                                                    -567 -8 -709 -20 -247 -21 -415 -43 -440 -56 -41 -22 -38 -98 5 -126 23 -15
+                                                    36 -15 173 0 424 47 1005 67 1357 47 l110 -6 8 -55 c16 -114 96 -235 197 -300
+                                                    225 -144 538 -57 647 181 10 21 21 39 24 39 15 0 231 -117 306 -166 241 -160
+                                                    377 -387 359 -601 -21 -253 -233 -463 -581 -576 -85 -28 -280 -77 -305 -77 -9
+                                                    0 -24 23 -38 58 -43 112 -141 210 -252 254 -35 13 -87 23 -143 26 -106 5 -192
+                                                    -18 -277 -77 -108 -73 -190 -220 -190 -337 0 -37 -3 -44 -22 -48 -13 -2 -185
+                                                    -23 -383 -46 -445 -52 -852 -104 -1010 -130 l-120 -20 -15 23 c-97 144 -282
+                                                    226 -447 199 -233 -39 -403 -257 -378 -488 l6 -61 -68 -53 c-288 -224 -451
+                                                    -537 -453 -868 0 -167 42 -311 132 -450 167 -255 450 -393 875 -427 l81 -7 6
+                                                    -33 c10 -53 62 -147 107 -194 183 -190 481 -187 659 5 48 52 96 148 109 217 5
+                                                    26 11 50 13 52 2 3 191 9 418 15 501 12 817 35 1204 86 138 18 136 18 136 -5
+                                                    0 -10 16 -50 35 -89 44 -87 123 -163 215 -205 87 -41 223 -49 316 -19 125 39
+                                                    217 122 277 249 30 64 32 74 32 183 0 111 -1 117 -36 190 l-36 75 44 70 c108
+                                                    172 177 356 189 503 22 284 -186 556 -473 617 -374 79 -733 -201 -733 -571 0
+                                                    -163 70 -361 196 -557 l44 -68 -21 -30 c-22 -31 -59 -128 -59 -154 0 -19 -4
+                                                    -20 -275 -49 -420 -46 -650 -61 -1145 -71 -157 -3 -297 -8 -312 -11 -25 -5
+                                                    -30 -1 -58 60 -65 137 -192 233 -343 258 -123 20 -268 -22 -366 -108 -57 -49
+                                                    -116 -141 -132 -204 l-13 -50 -45 0 c-63 0 -219 25 -316 50 -104 27 -265 107
+                                                    -337 167 -220 183 -289 478 -184 786 58 168 166 320 315 443 l64 53 47 -52
+                                                    c145 -157 378 -192 562 -84 54 32 139 121 167 175 31 60 51 147 51 218 l0 63
+                                                    53 10 c122 25 633 90 1192 151 105 11 206 23 226 26 35 6 37 4 66 -47 82 -145
+                                                    272 -244 431 -224 117 15 210 62 290 149 47 51 97 147 107 205 l6 37 98 16
+                                                    c194 34 465 139 612 239 219 148 349 370 349 595 0 205 -99 411 -276 573 -95
+                                                    87 -206 158 -383 247 -149 75 -151 76 -151 109 0 18 -9 61 -19 94 -66 214
+                                                    -279 345 -501 310z m205 -182 c62 -32 108 -79 134 -137 26 -59 37 -126 23
+                                                    -142 -6 -7 -10 -29 -9 -50 2 -80 -95 -183 -200 -214 -226 -66 -433 157 -356
+                                                    382 21 63 110 154 173 177 66 24 171 17 235 -16z m-248 -1683 c127 -62 190
+                                                    -208 149 -349 -23 -75 -106 -163 -180 -188 -114 -39 -221 -14 -306 72 -46 46
+                                                    -59 67 -73 118 -21 77 -21 105 -2 170 52 175 245 258 412 177z m-2404 -420
+                                                    c25 -8 66 -33 91 -55 203 -179 76 -512 -195 -513 -249 -1 -380 296 -215 491
+                                                    15 17 54 46 88 62 71 36 154 41 231 15z m3299 -651 c118 -56 210 -160 243
+                                                    -277 26 -89 16 -215 -25 -331 -39 -112 -128 -271 -189 -340 -25 -28 -83 -98
+                                                    -129 -153 -46 -56 -87 -102 -92 -102 -16 0 -210 238 -274 338 -127 197 -189
+                                                    394 -167 532 27 164 136 293 298 350 47 17 77 20 163 17 94 -2 112 -6 172 -34z
+                                                    m-424 -1185 c87 -106 188 -211 209 -219 40 -15 81 13 175 119 48 53 94 106
+                                                    101 116 14 19 15 19 28 -5 7 -14 13 -56 13 -99 1 -62 -4 -85 -27 -132 -53
+                                                    -107 -144 -163 -267 -162 -61 0 -85 5 -126 27 -100 51 -164 153 -164 261 0 50
+                                                    16 126 26 126 3 0 17 -15 32 -32z m-2288 -3 c107 -55 170 -151 170 -260 0 -83
+                                                    -23 -145 -76 -204 -140 -156 -392 -117 -484 75 -34 72 -33 173 4 248 31 64 99
+                                                    128 159 150 56 21 179 16 227 -9z" />
+                                    <path d="M4219 1925 c-201 -65 -294 -289 -200 -480 112 -228 427 -251 566 -42
+                                                    44 67 69 162 60 230 -16 119 -98 233 -201 278 -60 27 -166 33 -225 14z m169
+                                                    -159 c93 -49 128 -157 81 -254 -52 -106 -183 -131 -274 -50 -96 84 -64 266 55
+                                                    311 29 11 111 7 138 -7z" />
+                                </g>
+                            </svg>
+
+                        </a>
+                        <h2 class="timer count-title count-number" data-to="11900" data-speed="1500"></h2>
+                        <p class="count-text ">Positive Reviews</p>
+                    </div>
+
+                    <div class="counter col_fourth end">
+                        <a href="#">
+                            <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+
+                                <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                                    <path d="M184 5019 c-18 -20 -19 -51 -22 -878 -2 -637 1 -863 9 -884 14 -34
+                                                        51 -50 91 -42 59 13 58 8 58 492 l0 443 489 0 c479 0 489 0 515 21 44 35 36
+                                                        73 -55 265 l-81 170 86 172 c47 95 86 181 86 192 0 12 -11 32 -25 45 l-24 25
+                                                        -554 0 c-550 0 -554 0 -573 -21z m966 -136 c0 -3 -27 -57 -60 -119 -36 -68
+                                                        -60 -125 -60 -143 0 -17 27 -89 60 -159 33 -71 60 -131 60 -135 0 -4 -187 -7
+                                                        -415 -7 l-415 0 0 285 0 285 415 0 c228 0 415 -3 415 -7z" />
+                                    <path d="M3650 4919 c-130 -21 -258 -115 -323 -237 l-33 -62 -515 -4 c-373 -2
+                                                        -567 -8 -709 -20 -247 -21 -415 -43 -440 -56 -41 -22 -38 -98 5 -126 23 -15
+                                                        36 -15 173 0 424 47 1005 67 1357 47 l110 -6 8 -55 c16 -114 96 -235 197 -300
+                                                        225 -144 538 -57 647 181 10 21 21 39 24 39 15 0 231 -117 306 -166 241 -160
+                                                        377 -387 359 -601 -21 -253 -233 -463 -581 -576 -85 -28 -280 -77 -305 -77 -9
+                                                        0 -24 23 -38 58 -43 112 -141 210 -252 254 -35 13 -87 23 -143 26 -106 5 -192
+                                                        -18 -277 -77 -108 -73 -190 -220 -190 -337 0 -37 -3 -44 -22 -48 -13 -2 -185
+                                                        -23 -383 -46 -445 -52 -852 -104 -1010 -130 l-120 -20 -15 23 c-97 144 -282
+                                                        226 -447 199 -233 -39 -403 -257 -378 -488 l6 -61 -68 -53 c-288 -224 -451
+                                                        -537 -453 -868 0 -167 42 -311 132 -450 167 -255 450 -393 875 -427 l81 -7 6
+                                                        -33 c10 -53 62 -147 107 -194 183 -190 481 -187 659 5 48 52 96 148 109 217 5
+                                                        26 11 50 13 52 2 3 191 9 418 15 501 12 817 35 1204 86 138 18 136 18 136 -5
+                                                        0 -10 16 -50 35 -89 44 -87 123 -163 215 -205 87 -41 223 -49 316 -19 125 39
+                                                        217 122 277 249 30 64 32 74 32 183 0 111 -1 117 -36 190 l-36 75 44 70 c108
+                                                        172 177 356 189 503 22 284 -186 556 -473 617 -374 79 -733 -201 -733 -571 0
+                                                        -163 70 -361 196 -557 l44 -68 -21 -30 c-22 -31 -59 -128 -59 -154 0 -19 -4
+                                                        -20 -275 -49 -420 -46 -650 -61 -1145 -71 -157 -3 -297 -8 -312 -11 -25 -5
+                                                        -30 -1 -58 60 -65 137 -192 233 -343 258 -123 20 -268 -22 -366 -108 -57 -49
+                                                        -116 -141 -132 -204 l-13 -50 -45 0 c-63 0 -219 25 -316 50 -104 27 -265 107
+                                                        -337 167 -220 183 -289 478 -184 786 58 168 166 320 315 443 l64 53 47 -52
+                                                        c145 -157 378 -192 562 -84 54 32 139 121 167 175 31 60 51 147 51 218 l0 63
+                                                        53 10 c122 25 633 90 1192 151 105 11 206 23 226 26 35 6 37 4 66 -47 82 -145
+                                                        272 -244 431 -224 117 15 210 62 290 149 47 51 97 147 107 205 l6 37 98 16
+                                                        c194 34 465 139 612 239 219 148 349 370 349 595 0 205 -99 411 -276 573 -95
+                                                        87 -206 158 -383 247 -149 75 -151 76 -151 109 0 18 -9 61 -19 94 -66 214
+                                                        -279 345 -501 310z m205 -182 c62 -32 108 -79 134 -137 26 -59 37 -126 23
+                                                        -142 -6 -7 -10 -29 -9 -50 2 -80 -95 -183 -200 -214 -226 -66 -433 157 -356
+                                                        382 21 63 110 154 173 177 66 24 171 17 235 -16z m-248 -1683 c127 -62 190
+                                                        -208 149 -349 -23 -75 -106 -163 -180 -188 -114 -39 -221 -14 -306 72 -46 46
+                                                        -59 67 -73 118 -21 77 -21 105 -2 170 52 175 245 258 412 177z m-2404 -420
+                                                        c25 -8 66 -33 91 -55 203 -179 76 -512 -195 -513 -249 -1 -380 296 -215 491
+                                                        15 17 54 46 88 62 71 36 154 41 231 15z m3299 -651 c118 -56 210 -160 243
+                                                        -277 26 -89 16 -215 -25 -331 -39 -112 -128 -271 -189 -340 -25 -28 -83 -98
+                                                        -129 -153 -46 -56 -87 -102 -92 -102 -16 0 -210 238 -274 338 -127 197 -189
+                                                        394 -167 532 27 164 136 293 298 350 47 17 77 20 163 17 94 -2 112 -6 172 -34z
+                                                        m-424 -1185 c87 -106 188 -211 209 -219 40 -15 81 13 175 119 48 53 94 106
+                                                        101 116 14 19 15 19 28 -5 7 -14 13 -56 13 -99 1 -62 -4 -85 -27 -132 -53
+                                                        -107 -144 -163 -267 -162 -61 0 -85 5 -126 27 -100 51 -164 153 -164 261 0 50
+                                                        16 126 26 126 3 0 17 -15 32 -32z m-2288 -3 c107 -55 170 -151 170 -260 0 -83
+                                                        -23 -145 -76 -204 -140 -156 -392 -117 -484 75 -34 72 -33 173 4 248 31 64 99
+                                                        128 159 150 56 21 179 16 227 -9z" />
+                                    <path d="M4219 1925 c-201 -65 -294 -289 -200 -480 112 -228 427 -251 566 -42
+                                                        44 67 69 162 60 230 -16 119 -98 233 -201 278 -60 27 -166 33 -225 14z m169
+                                                        -159 c93 -49 128 -157 81 -254 -52 -106 -183 -131 -274 -50 -96 84 -64 266 55
+                                                        311 29 11 111 7 138 -7z" />
+                                </g>
+                            </svg>
+
+                        </a>
+                        <h2 class="timer count-title count-number" data-to="157" data-speed="1500"></h2>
+                        <p class="count-text ">Awards Winning</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER----->
+
+    <footer>
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-first-items">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-map-pin">
+                                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                    <path d="M18.364 4.636a9 9 0 0 1 .203 12.519l-.203 .21l-4.243 4.242a3 3 0 0 1 -4.097 .135l-.144 -.135l-4.244 -4.243a9 9 0 0 1 12.728 -12.728zm-6.364 3.364a3 3 0 1 0 0 6a3 3 0 0 0 0 -6z" />
+                                </svg>
+                                <h5>Location</h5>
+                                <p>55 Main Street, Australia</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" type="text/javascript"></script>
     <script src="../learn-project/assets/js/main.js" type="text/javascript"></script>
+
 </body>
 
 </html>
