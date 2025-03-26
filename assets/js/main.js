@@ -42,6 +42,8 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
+
+// COUNTER---
 (function ($) {
   $.fn.countTo = function (options) {
     options = options || {};
@@ -113,14 +115,14 @@ var swiper = new Swiper(".mySwiper", {
   };
 
   $.fn.countTo.defaults = {
-    from: 0, // the number the element should start at
-    to: 0, // the number the element should end at
-    speed: 1000, // how long it should take to count between the target numbers
-    refreshInterval: 100, // how often the element should be updated
-    decimals: 0, // the number of decimal places to show
-    formatter: formatter, // handler for formatting the value before rendering
-    onUpdate: null, // callback method for every time the element is updated
-    onComplete: null, // callback method for when the element finishes updating
+    from: 0,
+    to: 0,
+    speed: 1000,
+    refreshInterval: 100,
+    decimals: 0,
+    formatter: formatter,
+    onUpdate: null,
+    onComplete: null,
   };
 
   function formatter(value, settings) {
@@ -145,5 +147,85 @@ jQuery(function ($) {
     var $this = $(this);
     options = $.extend({}, options || {}, $this.data("countToOptions") || {});
     $this.countTo(options);
+  }
+});
+
+// SLICK-SLIDER
+
+$(() => {
+  var createSlick = () => {
+    let slider = $(".slider");
+
+    slider.not(".slick-initialized").slick({
+      autoplay: false,
+      infinite: true,
+      dots: false,
+      slidesToShow: 5,
+      slidesToScroll: 1,
+      autoplay: {},
+      responsive: [
+        {
+          breakpoint: 1199,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 2,
+            // adaptiveHeight: true,
+          },
+        },
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            adaptiveHeight: true,
+          },
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          },
+        },
+        {
+          breakpoint: 575,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    });
+  };
+
+  createSlick();
+
+  $(window).on("resize orientationchange", createSlick);
+});
+
+// FANCYBOX
+
+
+
+// toggle
+
+let header = document.querySelector("header");
+window.addEventListener("scroll", function () {
+  if (window.scrollY >= 50) {
+    header.style.backgroundColor = "var(--green-dark)";
+    header.style.transition = "background-color 0.3s ease, padding 0.1s ease";
+    topbar.style.padding = "10px";
+    header.style.padding = "20px";
+  } else {
+    header.style.backgroundColor = "";
+    header.style.padding = "20px";
+  }
+});
+
+window.addEventListener("scroll", function () {
+  if (window.scrollY >= 70) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
   }
 });

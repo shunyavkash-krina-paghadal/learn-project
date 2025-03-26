@@ -13,6 +13,28 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
+  .first-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .scoial-icons {
+    align-items: flex-start;
+    margin-top: 60px;
+  }
+  .first-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .footer-second-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .fourth-items-content {
+    margin-top: 50px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -28,10 +50,30 @@
   .hero-section .btn-green {
     display: block;
   }
-   .wrapper {
+  .wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+  }
+  .first-items ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .footer-second-items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .third-items-content {
+    margin-top: 40px;
+  }
+  .copy-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .copy-content {
+    padding-bottom: 20px;
   }
 }
 
@@ -43,12 +85,15 @@
     display: block;
     flex-direction: column;
     position: absolute;
-    background: var(--green-dark);
+    background: var(--white);
     top: 81%;
     right: 0;
     left: 0;
     z-index: 9;
-    /* height: 100vh; */
+    padding: 44px 0;
+  }
+  .se-icon {
+    display: none;
   }
   nav ul {
     display: flex;
@@ -59,7 +104,7 @@
     color: var(--white);
     font-weight: 500;
     line-height: 92px;
-}
+  }
   .btn-green {
     display: none;
   }
@@ -67,6 +112,32 @@
     display: flex;
     align-items: flex-start;
     gap: 42px;
+    height: 100%;
+    padding: 67px 0 0 0;
+  }
+  .btn-orange-1{
+    margin-top: 83px;
+    display: block;
+  }
+  header nav ul a {
+    color: var(--green-dark);
+  }
+  .logo-black {
+    display: block;
+    padding: 30px 20px;
+  }
+  .forms input {
+    border: 2px solid var(--gray);
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 15px;
+  }
+  .forms ::placeholder {
+    font-size: 17px;
+  }
+  .forms {
+    display: block;
+    margin: 0 20px;
   }
   .logos {
     display: block;

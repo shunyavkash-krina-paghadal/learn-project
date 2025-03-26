@@ -6,11 +6,13 @@ header ul a:hover {
   background-color: var(--orange);
   transition: 0.4s all ease-in-out;
 }
+.btn-orange-1:hover {
+  background-color: var(--green);
+  transition: 0.4s all ease-in-out;
+  color: var(--white);
+}
 .btn-orange:hover{
   background-color: var(--white);
   transition: 0.4s all ease-in-out;
   color: var(--orange);
-}
-.about-content:hover{
-
 }
