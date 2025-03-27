@@ -105,7 +105,6 @@ window.addEventListener("scroll", function () {
   if (window.scrollY >= 50) {
     header.style.backgroundColor = "var(--green-dark)";
     header.style.transition = "background-color 0.3s ease, padding 0.1s ease";
-    topbar.style.padding = "10px";
     header.style.padding = "20px";
   } else {
     header.style.backgroundColor = "";
@@ -122,24 +121,29 @@ window.addEventListener("scroll", function () {
 });
 
 // COUNTER---
+document.addEventListener("DOMContentLoaded", function () {
+  function animateCounters() {
+    const counters = document.querySelectorAll(".count-number");
 
-function animateCounters() {
-  const counters = document.querySelectorAll(".count-number");
+    counters.forEach((counter) => {
+      const target = +counter.getAttribute("data-to");
+      const speed = +counter.getAttribute("data-speed");
+      let count = 0;
+      const increment = target / 100;
 
-  counters.forEach((counter) => {
-    const target = +counter.getAttribute("data-to");
-    let count = 0;
+      function updateCounter() {
+        count += increment;
+        if (count >= target) {
+          counter.innerText = Math.floor(target);
+        } else {
+          counter.innerText = Math.floor(count);
+          requestAnimationFrame(updateCounter);
+        }
+      }
 
-    function updateCounter() {
+      updateCounter();
+    });
+  }
 
-      if (count >= target) {
-        counter.innerText = Math.floor(target);
-      } else {
-        counter.innerText = Math.floor(count);
-        requestAnimationFrame(updateCounter);
-      } 
-    }
-
-    updateCounter();
-  });
-}
+  animateCounters();
+});
