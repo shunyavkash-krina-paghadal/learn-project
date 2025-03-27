@@ -121,7 +121,6 @@ window.addEventListener("scroll", function () {
   }
 });
 
-
 // COUNTER---
 
 function animateCounters() {
@@ -147,3 +146,8 @@ function animateCounters() {
 }
 
 document.addEventListener("DOMContentLoaded", animateCounters);
+
+// SEARCH-BTN---
+document.getElementById("search-btn").addEventListener("click", function () {
+  document.querySelector(".search-container").classList.toggle("active");
+});

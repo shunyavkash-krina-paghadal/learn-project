@@ -90,7 +90,7 @@ label {
 .forms {
   display: none;
 }
-.btn-orange-1{
+.btn-orange-1 {
   display: none;
 }
 .search {
@@ -189,3 +189,31 @@ nav :hover .dropdown {
   opacity: 1;
   top: 100%;
 } */
+
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+#search-input {
+  width: 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: width 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#search-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container.active #search-input {
+  width: 200px;
+  opacity: 1;
+  visibility: visible;
+}
