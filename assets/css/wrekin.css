@@ -9,6 +9,7 @@ a {
   color: currentColor;
 }
 :root {
+  --primary: #002a4d;
   --white: #ffffff;
 }
 img {
@@ -21,8 +22,142 @@ img {
 }
 body {
   font-family: "Archia";
-  background-color: black;
 }
 li {
   list-style: none;
+}
+
+/* HERO-SECTION-- */
+
+.hero-section img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.heros-content {
+  position: relative;
+  padding-block: 174px;
+}
+.heros-content h2 {
+  font-size: 90px;
+  color: var(--white);
+}
+
+.overview-section img {
+  content: "";
+  background-image: url("/Users/imac/code/krinaa/learn-pr/learn-project/assets/ img/background/Subtraction 9.png");
+  position: absolute;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  height: 695px;
+}
+
+.overview-section {
+  position: relative;
+  background-color: var(--white);
+  border-radius: 30px 30px 0px 0px;
+  padding: 200px 0;
+}
+.overview-section-para .head {
+  font-size: 70px;
+  color: var(--primary);
+  font-weight: 300 !important;
+}
+.over-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  padding-top: 30px;
+}
+.btn-green {
+  background-color: #a5cec0;
+  color: #002a4d;
+  font-weight: 900px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  transition: 0.3s all ease-in-out;
+  margin-top: 20px;
+}
+.btn-green:hover {
+  color: var(--white);
+  background-color: #002a4d;
+  transition: 0.3s all ease-in-out;
+}
+.overe-paras p,
+.support-items p {
+  line-height: 36px;
+  color: var(--primary);
+}
+.support-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.support-items h4 ,.support-info ,.support-info{
+  font-size: 50px;
+  color: var(--primary);
+}
+.over-img::after {
+  content: "";
+  position: absolute;
+  background-color: #a5cec0;
+  width: 100%;
+  height: 100%;
+  top: 10%;
+  right: -10%;
+  z-index: -1;
+  border-radius: 10px;
+  transition: 0.3s all ease-in-out;
+}
+.over-img:hover::after {
+  top: 0;
+  right: 0;
+}
+.over-img {
+  position: relative;
+}
+.support-items p {
+  max-width: 600px;
+  margin: 20px 0;
+}
+.close-icons {
+  color: var(--white);
+  background-color: var(--primary);
+  border-radius: 50px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.reports {
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100vh;
+  background: var(--white);
+  box-shadow: -4px 0px 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  z-index: 999;
+  padding-top: 80px;
+  padding-left: 100px;
+  padding-right: 50px;
+}
+.subhead{
+    color: var(--primary);
+    font-size: 30px;
 }

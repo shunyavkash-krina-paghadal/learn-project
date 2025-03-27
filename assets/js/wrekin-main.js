@@ -121,3 +121,18 @@ window.addEventListener("scroll", function () {
     }
   });
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const openModalBtn = document.getElementById("openModal");
+  const myModal = document.getElementById("myModal");
+  const closeModalBtn = myModal?.querySelector(".close");
+  if (openModalBtn && myModal && closeModalBtn) {
+    openModalBtn.addEventListener("click", function () {
+      myModal.style.display = "flex";
+      $("body").css("overflow", "hidden");
+    });
+    closeModalBtn.addEventListener("click", function () {
+      myModal.style.display = "none";
+      $("body").css("overflow", "auto");
+    });
+  }
+});

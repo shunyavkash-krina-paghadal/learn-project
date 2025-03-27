@@ -21,6 +21,7 @@
   top: 0;
   left: 0;
   padding: 31px 0;
+  /* background-color: var(--primary); */
 }
 .serch-icon-img {
   position: relative;
@@ -224,7 +225,7 @@
   line-height: 26px;
   font-weight: 600;
   text-transform: capitalize;
-  color: var(--secondary);
+  color: var(--white);
 }
 .menu-texts {
   color: var(--primary);
