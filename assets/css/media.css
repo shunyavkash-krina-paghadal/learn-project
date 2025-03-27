@@ -66,6 +66,10 @@
   }
   .third-items-content {
     margin-top: 40px;
+    line-height: 30px;
+  }
+  .third-items-content a {
+    line-height: 30px;
   }
   .copy-section {
     display: flex;
@@ -75,9 +79,15 @@
   .copy-content {
     padding-bottom: 20px;
   }
+  .copy-content h5 {
+    line-height: 27px;
+  }
 }
 
 @media (max-width: 575px) {
+  .header-img img {
+    max-width: 140px;
+  }
   .checkbox {
     display: block;
   }
@@ -115,7 +125,7 @@
     height: 100%;
     padding: 47px 0 0 0;
   }
-  .btn-orange-1{
+  .btn-orange-1 {
     margin-top: 83px;
     display: block;
   }
