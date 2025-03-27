@@ -129,25 +129,17 @@ function animateCounters() {
   counters.forEach((counter) => {
     const target = +counter.getAttribute("data-to");
     let count = 0;
-    let increment = target / 100;
 
     function updateCounter() {
-      count += increment;
+
       if (count >= target) {
         counter.innerText = Math.floor(target);
       } else {
         counter.innerText = Math.floor(count);
         requestAnimationFrame(updateCounter);
-      }
+      } 
     }
 
     updateCounter();
   });
 }
-
-document.addEventListener("DOMContentLoaded", animateCounters);
-
-// SEARCH-BTN---
-document.getElementById("search-btn").addEventListener("click", function () {
-  document.querySelector(".search-container").classList.toggle("active");
-});
