@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Archia';
+    src: url('Archia-Regular.eot');
+    src: url('Archia-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Archia-Regular.woff2') format('woff2'),
+        url('Archia-Regular.woff') format('woff'),
+        url('Archia-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
