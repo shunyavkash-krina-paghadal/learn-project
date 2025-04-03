@@ -8,6 +8,11 @@
   header nav {
     display: none;
   }
+  .blog-inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
   .wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -38,10 +43,15 @@
 }
 
 @media (max-width: 767px) {
-  .heros-inner {
+  .hero-inner {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     padding: 160px 0 80px 0;
+    gap: 20px;
+  }
+  .blog-inner {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     gap: 20px;
   }
   .heros-items {
@@ -82,11 +92,28 @@
   .copy-content h5 {
     line-height: 27px;
   }
+  .gallery-all-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 20px;
+  }
 }
 
 @media (max-width: 575px) {
   .header-img img {
     max-width: 140px;
+  }
+  .blog-title {
+    text-align: left;
+  }
+  .blog-title h3 {
+    font-size: 31px;
+    color: var(--green-dark);
+    line-height: 61px;
+    font-weight: 700;
+    max-width: 700px;
+    margin: auto;
+    padding-top: 20px;
   }
   .checkbox {
     display: block;
@@ -156,6 +183,12 @@
   .wrapper {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+
+  .gallery-all-items {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) !important;
     gap: 20px;
   }
 }

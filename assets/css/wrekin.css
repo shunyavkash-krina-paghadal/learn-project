@@ -40,6 +40,9 @@ li {
 .heros-content {
   position: relative;
   padding-block: 174px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .heros-content h2 {
   font-size: 90px;
@@ -48,7 +51,6 @@ li {
 
 .overview-section img {
   content: "";
-  background-image: url("/Users/imac/code/krinaa/learn-pr/learn-project/assets/ img/background/Subtraction 9.png");
   position: absolute;
   z-index: 999;
   top: 0;
@@ -98,7 +100,9 @@ li {
   justify-content: space-between;
   gap: 20px;
 }
-.support-items h4 ,.support-info ,.support-info{
+.support-items h4,
+.support-info,
+.support-info {
   font-size: 50px;
   color: var(--primary);
 }
@@ -157,7 +161,11 @@ li {
   padding-left: 100px;
   padding-right: 50px;
 }
-.subhead{
-    color: var(--primary);
-    font-size: 30px;
+.subhead {
+  color: var(--primary);
+  font-size: 30px;
+}
+.support-info-para {
+  color: var(--primary);
+  line-height: 33px;
 }

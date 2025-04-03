@@ -53,7 +53,7 @@ $(() => {
       autoplay: false,
       infinite: true,
       dots: false,
-      slidesToShow: 5,
+      slidesToShow: 2,
       slidesToScroll: 1,
       autoplay: {},
       responsive: [
