@@ -435,33 +435,132 @@ strong {
 
 /* Aboutpage css */
 
-.about-items-hero {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 99;
+.whosection {
+  padding: 50px 0 0 0;
+}
+.whoinner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+}
+.whoitems {
   display: flex;
-  margin: auto;
-  text-align: center;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  transform: translate(-50%);
 }
-.about-us-img {
-  position: relative;
-}
-.about-us-img::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: "";
+.whoimg {
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 999;
+}
+.whoimg img {
+  border-top-left-radius: 999px;
+  border-top-right-radius: 999px;
+  width: 100%;
+  object-fit: cover;
+}
+.whocontent h2 {
+  font-size: 45px;
+  color: var(--green-dark);
+  max-width: 540px;
+  padding: 30px 0;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 58px;
+}
+.whocontent p {
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  line-height: 27px;
+  color: var(--green-dark);
+}
+@keyframes growProgressBar {
+  0%,
+  33% {
+    --pgPercentage: 0;
+  }
+  100% {
+    --pgPercentage: var(--value);
+  }
 }
 
+@property --pgPercentage {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 0;
+}
+.progre {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+div[role="progressbar"] {
+  --size: 12rem;
+  --fg: #369;
+  --bg: #def;
+  --pgPercentage: var(--value);
+  animation: growProgressBar 3s 1 forwards;
+  /* width: var(--size); */
+  /* height: var(--size); */
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(
+      closest-side,
+      white 80%,
+      transparent 0 99.9%,
+      white 0
+    ),
+    conic-gradient(var(--green) calc(var(--pgPercentage) * 1%), whitesmoke 0);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: calc(var(--size) / 5);
+  color: var(--green-dark);
+  width: 130px;
+  height: 130px;
+}
+
+div[role="progressbar"]::before {
+  counter-reset: percentage var(--value);
+  content: counter(percentage) "%";
+}
+
+/* Teamsection */
+
+.teamsection {
+  padding: 80px;
+  background-color: #f9f9f7;
+  margin-bottom: 50px;
+}
+.teamtitle {
+  text-align: center;
+}
+.teamtitle h2 {
+  font-size: 40px;
+  padding-top: 30px;
+  max-width: 650px;
+  text-align: center;
+  margin-inline: auto;
+  line-height: 60px;
+  letter-spacing: 0.03em;
+}
+.teaminner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.teamcontent {
+  display: flex;
+  align-items: center;
+  background-color: var(--white);
+  padding: 20px;
+  border-radius: 20px;
+}
+.team-sub {
+  margin-left: 20px;
+}
+.team-sub h4 {
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  margin-bottom: 10px;
+}
 /* GALLERU-SECTION */
 
 .gallery-header {
@@ -621,9 +720,9 @@ footer {
   background-color: var(--green-dark);
   padding: 180px 0 10px 0;
 }
-.footers{
-   background-color: var(--green-dark);
-   padding:0 0 20px 0;
+.footers {
+  background-color: var(--green-dark);
+  padding: 0 0 20px 0;
 }
 .footer-first-items li a svg {
   background-color: var(--green);
